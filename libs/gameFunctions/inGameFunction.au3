@@ -79,8 +79,10 @@ Func loadSequenceBarb()
 	send("{2}")
 
 	while (not act3CheckQuestDone()) And (Not isDead()) And (getGameLength() <= $gameMaxLength) And checkGameStatus() And checkInGame()
-		MouseMove(700,702)
-		MouseDown("right")
+		sleep(2000)
+		send("{2}")
+		sleep(2000)
+		send("{2}")
 	WEnd
 	If isDead() Then
 		writeLog("Mort")
@@ -97,7 +99,6 @@ Func loadSequenceBarb()
 		$sequenceError = 1
 		Return 1
 	EndIf
-	MouseUp("right")
 	sleep(1000)
 	MouseClick("left",844,574)
 	sleep(1000)
@@ -215,6 +216,7 @@ Func loadSequenceSoSo()
 		MouseMove(700,702)
 		MouseDown("right")
 	WEnd
+	MouseUp("right")
 	If isDead() Then
 		writeLog("Mort")
 		$sequenceError = 1
@@ -230,7 +232,6 @@ Func loadSequenceSoSo()
 		$sequenceError = 1
 		Return 1
 	EndIf
-	MouseUp("right")
 	sleep(1000)
 	MouseClick("left",844,574)
 	sleep(1000)
