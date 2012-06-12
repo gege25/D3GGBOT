@@ -18,7 +18,7 @@
 #AutoIt3Wrapper_Res_requestedExecutionLevel=asInvoker
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 
-;; configs
+;; configs 
 AutoItSetOption("MouseCoordMode",2)
 AutoItSetOption("PixelCoordMode",2)    
 ;AutoItSetOption("MustDeclareVars", 1)  
