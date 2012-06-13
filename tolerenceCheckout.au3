@@ -18,9 +18,9 @@ AutoItSetOption("PixelCoordMode",2)
 
 Global $imgSearchTolerance = 0
 
-#include "ImageSearch.au3"
-#include "variables.au3"
-#include "gameFunctions/gameChecks.au3"
+#include "au3udf/ImageSearch.au3"
+#include "libs/variables.au3"
+#include "libs/gameFunctions/gameChecks.au3"
 
 HotKeySet("{PAUSE}","startTest")
 HotKeySet("{DEL}","stopTest")
