@@ -1,11 +1,11 @@
 #cs ----------------------------------------------------------------------------
 
  AutoIt Version: 3.3.8.1
- Author:         myName
+ Author:         Anakha
 
- Script Function:
-	Template AutoIt script.
-
+ Script Description
+	Configure le fichier D3Prefs.txt avec la résolution demandé.
+	Les configs graphiques sont défini au minimum, le son et les sous titre sont désactivés
 #ce ----------------------------------------------------------------------------
 
 #include <ButtonConstants.au3>
@@ -72,7 +72,7 @@ Func editPref()
 				
 			Case "DisplayModeWindowMode"
 				$info[2]=1
-		
+
 			Case "DisplayModeWinLeft"	
 				$info[2]=0		
 				
@@ -93,97 +93,97 @@ Func editPref()
 				
 			Case "DisplayModeWidth" 	
 				$info[2]=$w
-		
-		    Case "DisplayModeHeight" 		
+
+			Case "DisplayModeHeight" 		
 				$info[2]=$h
 				
-		    Case "DisplayModeRefreshRate" 	
+			Case "DisplayModeRefreshRate" 	
 				$info[2]=60
 				
-		    Case "DisplayModeBitDepth" 	
+			Case "DisplayModeBitDepth" 	
 				$info[2]=32
 				
-		    Case "Gamma"	
+			Case "Gamma"	
 				$info[2]="1.000000"
 				
-		    Case "MipOffset"
+			Case "MipOffset"
 				$info[2]=1
-				 					
-		    Case "ShadowQuality"
+									
+			Case "ShadowQuality"
 				$info[2]=0
 				
-		    Case "PhysicsQuality"
+			Case "PhysicsQuality"
 				$info[2]=0
 				
-		    Case "ClutterQuality" 
+			Case "ClutterQuality" 
 				$info[2]=0
 				
-		    Case "Vsync" 		
+			Case "Vsync" 		
 				$info[2]=0
 				
-		    Case "Letterbox" 	
+			Case "Letterbox" 	
 				$info[2]=0
 				
-		    Case "Antialiasing"
-				$info[2]=1
- 				
-		    Case "LowFX" 		
+			Case "Antialiasing"
 				$info[2]=1
 				
-		    Case "LimitForegroundFPS" 	
+			Case "LowFX" 		
 				$info[2]=1
 				
-		    Case "MaxForegroundFPS" 	
+			Case "LimitForegroundFPS" 	
+				$info[2]=1
+				
+			Case "MaxForegroundFPS" 	
 				$info[2]=100
 				
-		    Case "LimitBackgroundFPS" 	
+			Case "LimitBackgroundFPS" 	
 				$info[2]=1	
 				
-		    Case "MaxBackgroundFPS"		
+			Case "MaxBackgroundFPS"		
 				$info[2]=25	
 				
-		    Case "DisableTrilinearFiltering" 
+			Case "DisableTrilinearFiltering" 
 				$info[2]=0
 				
-		    Case "ColorCorrection" 		
+			Case "ColorCorrection" 		
 				$info[2]=1
 				
-		    Case "MipBias" 			
+			Case "MipBias" 			
 				$info[2]="0.000000"
 				
-		    Case "ReflectionQuality" 
+			Case "ReflectionQuality" 
 				$info[2]=0
 				
-		    Case "TonemapExposure" 	
+			Case "TonemapExposure" 	
 				$info[2]="1.900000"
 				
-		    Case "TonemapContrast" 	
+			Case "TonemapContrast" 	
 				$info[2]="1.500000"
 				
-		    Case "TonemapSaturation" 
+			Case "TonemapSaturation" 
 				$info[2]="1.000000"
 				
-		    Case "TonemapGain" 	
+			Case "TonemapGain" 	
 				$info[2]="1.000000"
 				
-		    Case "HardwareClass" 
+			Case "HardwareClass" 
 				$info[2]=4
 				
-		    Case "MasterVolume" 
+			Case "MasterVolume" 
 				$info[2]="0.000000"
 				
-		    Case "EffectVolume"
+			Case "EffectVolume"
 				$info[2]="0.480000"
- 				
-		    Case "MusicVolume"
+				
+			Case "MusicVolume"
 				$info[2]="1.000000"
 				
-		    Case "MuteSound" 		
+			Case "MuteSound" 		
 				$info[2]=1		
 				
-		    Case "QuestSubtitlesEnabled"
+			Case "QuestSubtitlesEnabled"
 				$info[2]=0	
-			
+
 			Case "HardwareClass"
 				$info[2]=4
 		
