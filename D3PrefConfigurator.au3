@@ -25,10 +25,10 @@ EndIf
 
 #Region ### START Koda GUI section ### Form=
 $Form1 = GUICreate("Form1", 145, 95, 193, 212)
-$gHeight = GUICtrlCreateLabel("Hauteur :", 8, 34, 48, 17)
 $gWidth = GUICtrlCreateLabel("Largeur :", 8, 10, 46, 17)
-$gHeightVal = GUICtrlCreateInput("600", 56, 32, 81, 21)
-$gWidthVal = GUICtrlCreateInput("800", 56, 8, 81, 21)
+$gHeight = GUICtrlCreateLabel("Hauteur :", 8, 34, 48, 17)
+$gWidthVal = GUICtrlCreateInput("1024", 56, 8, 81, 21)
+$gHeightVal = GUICtrlCreateInput("768", 56, 32, 81, 21)
 $gValid = GUICtrlCreateButton("Valider", 8, 56, 131, 33)
 
 GUICtrlSetOnEvent($gValid,"editPref")
