@@ -2,7 +2,7 @@
 
  AutoIt Version: 3.3.8.1
  Author:         Anakha
- Lol test : Euclide 321321
+
  Script Description
 	Configure le fichier D3Prefs.txt avec la résolution demandé.
 	Les configs graphiques sont défini au minimum, le son et les sous titre sont désactivés
