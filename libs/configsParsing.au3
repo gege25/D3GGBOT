@@ -24,6 +24,8 @@ Func loadConfigs()
 	Global $character		= IniRead($iniConfigFile,"gameConfig","character",1)
 	Global $runModRepSell	= IniRead($iniConfigFile,"gameConfig","repairSellRun",10)
 	
+	;; Quest info
+	Global $makequest		= IniRead($iniConfigFile,"quest","questSelect",411)
 	;; pickit options
 	Global $pickMagic	= IniRead($iniConfigFile,"pickitOptions","takeMagic",1)
 	Global $pickRare	= IniRead($iniConfigFile,"pickitOptions","takeRare",1)

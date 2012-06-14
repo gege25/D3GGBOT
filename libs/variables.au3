@@ -89,7 +89,8 @@ Global $gameQuestDone		= 'img/game_quest_done.bmp'
 Global $gameResBtn			= 'img/game_res_btn.bmp'
 Global $gameResBtnRed		= 'img/game_res_btn_red.bmp'
 
-
+;Quest
+Global $start_q_4_1_1		= "4-1-1"
 
 
 

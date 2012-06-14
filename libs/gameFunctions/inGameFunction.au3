@@ -19,6 +19,14 @@ Func loadGame()
 	
 	$sequenceError=0
 	$botInTown=0
+		
+	act3moveToTyraelIskatu()
+		If $sequenceError Then
+		return 1
+	EndIf
+		
+	skipCinematic()
+	sleep(4000)  
 	
 	Switch $charType
 		Case $TYPE_SORC 
@@ -30,13 +38,54 @@ Func loadGame()
 		Case $TYPE_DH
 			writeLog('Pas de sequence pour le type de character : DH')
 		Case $TYPE_WD
-			writeLog('Pas de sequence pour le type de character : WD')
+			loadSequencewhich_doctor()
 	EndSwitch
 	
 	If $sequenceError Then
 		Return 1
 	EndIf
-	
+
+	;;;;;;;;;;;;;
+
+	while (not act3CheckQuestDone()) And (Not isDead()) And (getGameLength() <= $gameMaxLength) And checkGameStatus() And checkInGame()
+		sleep(500)
+		send("{2}")
+		sleep(500)
+		send("{2}")
+	WEnd
+	If isDead() Then
+		writeLog("Mort")
+		$sequenceError = 1
+		Return 1
+	EndIf
+	If getGameLength() >= $gameMaxLength Then
+		writeLog("Game Timeout")
+		$sequenceError = 1
+		Return 1
+	EndIf
+	If Not checkGameStatus() Or Not checkInGame() Then
+		writeLog("On n'est plus dans la game")
+		$sequenceError = 1
+		Return 1
+	EndIf
+	sleep(1000)
+	MouseClick("left",844,574)
+	sleep(1000)
+	MouseClick("left",430,582)
+	sleep(1000)
+	MouseClick("left",460,330)
+	Sleep(1000)
+	MouseClick("left",804,290)
+	Sleep(1000)
+	MouseClick("left",628,786)
+	sleep(500)
+	send("{SPACE}")
+	sleep(200)
+	send("{SPACE}")
+		sleep(500)
+
+	pickit()
+	;;;;;;;;;
 	
 	If Mod($nbRun,$runModRepSell) == 0 Then
 		act3sellRepair()
@@ -410,7 +459,7 @@ Func act3sellRepair()
 	;; on retourne en ville
 	Send("t")
 	$botInTown=1
-	Sleep(7500)
+	Sleep(8900)
 	;; on va au npc en haut a droite qui vend les potions
 	MouseClick("left",886,259)
 	sleep(1500)

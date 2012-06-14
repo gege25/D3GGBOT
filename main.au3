@@ -44,6 +44,7 @@ AutoItSetOption("GUIOnEventMode",1)
 #include "libs/gameFunctions/outGameFunction.au3"
 #include "libs/gameFunctions/inGameFunction.au3"
 #include "libs/commonFunctions.au3"
+#include "libs/gameFunctions/quest/questSelection.au3"
 
 ;; Raccourcis clavier
 HotKeySet("{PAUSE}","togglePause")
@@ -195,7 +196,7 @@ Func doRun()
 			EndIf
 		EndIf
 		
-		selectQuest()
+		startQuest()
 		
 		$error = waitForLobby()
 		If $error Then
