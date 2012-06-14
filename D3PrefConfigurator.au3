@@ -1,7 +1,7 @@
 #cs ----------------------------------------------------------------------------
 
  AutoIt Version: 3.3.8.1
- Author:         Anakha
+ Author:        Anakha
 
  Script Description
 	Configure le fichier D3Prefs.txt avec la résolution demandé.
