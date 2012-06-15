@@ -143,8 +143,7 @@ Func waitForLobby()
 	EndIf
 EndFunc
 
-
-Func selectDiff()
+Func selectQuest()
 	writeLog("Sélection de la quest")
 	MouseClick("left",213,440)
 	sleep(500)
@@ -156,10 +155,18 @@ Func selectDiff()
 		sleep(200)
 		$selectDiff=1
 	EndIf
-EndFunc
-
-
-Func checkQuest()	
+	startQuest()
+	;MouseClick("left",501,259,15)
+	;sleep(200)
+	;MouseClick("left",250,287)
+	;sleep(200)
+	;MouseClick("left",501,679,15)
+	;sleep(200)
+	;MouseClick("left",250,530)
+	;sleep(200)
+	;MouseClick("left",852,784)
+	;sleep(1000)
+	
 	If checkQuestContinue() Then
 		MouseClick("left", 527,572)
 		sleep(500)

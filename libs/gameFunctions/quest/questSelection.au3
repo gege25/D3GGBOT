@@ -1,4 +1,7 @@
 ;selection des quetes
+ 
+
+sleep (2000)
 Func startQuest()
 	If $makequest=411 then
 		MouseClick("left",501,259,15)

@@ -44,6 +44,7 @@ AutoItSetOption("GUIOnEventMode",1)
 #include "libs/gameFunctions/outGameFunction.au3"
 #include "libs/gameFunctions/inGameFunction.au3"
 #include "libs/commonFunctions.au3"
+#include "libs/gameFunctions/classes/WD/whichdoctor.au3"
 #include "libs/gameFunctions/quest/questSelection.au3"
 
 ;; Raccourcis clavier
@@ -196,7 +197,7 @@ Func doRun()
 			EndIf
 		EndIf
 		
-		startQuest()
+		selectQuest()
 		
 		$error = waitForLobby()
 		If $error Then
@@ -281,5 +282,4 @@ Func killGame()
 		ProcessClose($pid)
 	EndIf	
 EndFunc
-
 
