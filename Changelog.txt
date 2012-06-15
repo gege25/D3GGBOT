@@ -1,0 +1,15 @@
+D3GGBOT v1.00 by gege25
+Basé sur le bot Gms Gold Bot de gmstemple.com par Anakha
+
+---Version 1.00----
+
+- Possibilité de changer de résolution, grace à un coeff
+- L'étape du launcher est supprimée
+- Rajout de différents scripts autre que Iskatu
+- Rajout script pour pouvoir changer de skill entre deux boss automatiquement
+- rajout séquence barbare Iskatu v2, run vers Rakanoth, kill rakanoth
+- Possibilité de choisir le script à jouer dans la fenetre principale
+- Ajout des images en 800x600
+- Rajout de mesures de sécurité, le main.exe prendra différents noms
+- Rajout d'un outil de download de la dernière version
+- Correction bug divers, les pixels search auront plusieur valeurs, pour plus de commodité
